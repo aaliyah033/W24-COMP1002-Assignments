@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 3</title>
+</head>
+<body>
+<form name="myform" action="formprocess.php" method="post">
+    <fieldset>
+         <!-- Personal Details Box -->
+        <legend>Your Details</legend>
+       
+            <p>Name: <input type="text" name="name"></p>
+            <p>E-Mail: <input type="text" id="email"> </p>
+
+       
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Your Review</legend>
+         <!-- choosing option -->
+        How did you hear from us:<br>
+        <select name="how-heard">
+            <option value="google">Google</option>
+            <option value="friends">Magazine</option>
+            <option value="phone">Friends</option>
+        </select><br><br>
+        
+         <!-- check bouble-->
+        <label>Would you visit again:</label>
+        <input type="radio" id="yes" name="visit-again" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="visit-again" value="no">
+        <label for="no">No</label>
+        <input type="radio" id="maybe" name="visit-again" value="maybe">
+        <label for="maybe">Maybe</label><br><br>
+        
+         <!-- comment option -->
+        Comments:<br>
+        <textarea rows="8" cols="100" name="comments" placeholder="If you have any comments, please enter them here.">
+        </textarea>
+
+         <!-- check box option -->
+        <input type="checkbox" name="sign-me-up" value="yes">
+        Sign me up for email updates
+        <br>
+
+         <!-- Submit Button -->
+        <button type="submit">Submit Review</button>
+        </fieldset>
+    </form>
+   
+</body>
+</html>
