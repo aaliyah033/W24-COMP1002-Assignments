@@ -9,4 +9,5 @@
 Assignments Status:
 <ul>
   <li>✅ Lab 1 submission reviewed.</li>
+  <li>✅ Lab 2 submission reviewed.</li>
 </ul>
