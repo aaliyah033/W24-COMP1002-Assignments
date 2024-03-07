@@ -1,0 +1,161 @@
+/* this is for whole body */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('images/background2.jpg');
+    padding: 0;
+    background-position: center;
+  } 
+  
+ /* this is for the header  */
+
+ header {
+    padding: 20px;
+    box-shadow: 0 2px 5px black;
+ }   
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(228, 11, 11);
+  
+  }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+} 
+
+  .logo img {
+    max-height: 65px;
+  }
+
+  nav ul li a:hover {
+    color: #c51212; 
+  }
+  
+  /* this is the main page  */
+
+  main {
+    padding: 50px;
+    text-align: center;
+}
+
+.page {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 30px #c51212;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #c51212;
+    max-height: 150px;
+    max-width: 200px; 
+    height: 100%;  
+
+}
+
+
+.orderbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c51212;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.orderbutton:hover {
+    background-color: #c51212;
+}
+
+
+/* this is for the order menu  */
+
+.form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+}
+
+.form:hover{
+    background-color: #c51212;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+
+/* this is for the button  */
+button {
+    padding: 10px 20px;
+    background-color: #c51212;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c51212;
+}
+
+footer {
+    background-color: rgb(228, 11, 11);
+    color:whitesmoke;
+    padding: 20px;
+    text-align: center;
+    
+    
+}

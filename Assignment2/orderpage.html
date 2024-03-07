@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza order form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- this is for the header top -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/pizzalogo.png" alt="Website Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Menu</a></li>
+                    <li><a>Order</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- the main middle page -->
+    <main>
+         <section class="form"> 
+            <h1>Place Your Pizza Order</h1>
+            <form name="order" action="formprocess.php" method="POST">
+                <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Name:</label> 
+                <input type="text" id="name" required>
+                <br><br>
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone:</label> 
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+                <label for="points">CSS Points:</label> 
+                <input type="tel" id="points" name="points" required> 
+                </fieldset>
+                <br>
+
+                <fieldset>
+                <legend>Enter your chosen toppings</legend>
+                <label >Pizza Type:</label>
+                <select name="type"> 
+                    <option value="margherita">Margherita</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+                </fieldset>
+                 <br>
+                
+                 <fieldset>
+                <legend> Enter your chosen pizza size </legend>
+                <label>Pizza Size:</label>
+                <input type="checkbox" id="small" name="pizza-size" value="small">
+                <label for="small">Small</label>
+                <input type="checkbox" id="medium" name="pizza-size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="checkbox" id="large" name="pizza-size" value="large">
+                <label for="large">Large</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend> Enter your chosen Toppings</legend>
+                <label>Toppings:</label>
+                <input type="checkbox" id="cheese" name="toppings" value="cheese">
+                <label for="cheese">Extra Cheese</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+                </fieldset>
+                <br>
+                <button type="submit">Place Order</button>
+            </form>
+         </section> 
+    </main>
+     <!-- this is the bottom page -->
+    <footer>
+        <p>&copy; CSS Pizzaria. All rights reserved.</p>
+    </footer>
+</body>
+</html>
