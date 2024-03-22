@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <style>
+        span{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> LAB 4</h1>
+    <!-- add id to show the result -->
+    <P id="result"> </P>
+    <!-- the script should alwayd have its own file -->
+    <script>
+        const paraghraph = document.getElementById("result");
+        let repeatcode;
+
+        do {
+            let i = 1;
+            let sum = 0;
+            let num = parseInt(prompt("ENTER AN INTEGER NUMBER", 100));
+            while (i <= num) {
+                sum += i;
+                i++;
+
+            }
+            //use b for bolding 
+            // document.write("THE SUM IS (1 - " + num + "):" + "<b>" + sum + "/b");
+            //use b for bolding using (``)
+            //as well as using span in lne elemnt when needed to apply style for the text (look at the top style section changed color)
+            //document.write(`THE SUM IS (1 - ${num}): <b><span>${sum}<span></b><br>`);
+            //instead of write can use the DOM from const to as follows
+            //paraghraph.textContent = paraghraph.textContent + " " + sum;
+            paraghraph.innerHTML += `THE SUM IS (1 - ${num}): <b><span>${sum}<span></b><br>`;
+            
+           repeatcode =  prompt("REPEAT? (y/n)", "y");
+
+        } while (repeatcode == "y")
+    </script>
+</body>
+</html>
+
